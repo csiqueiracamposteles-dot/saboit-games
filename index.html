@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#100b1b">
+  <meta name="description" content="Saboit Games — um acervo de jogos clássicos para quem gosta de colecionar.">
+  <title>Saboit Games | Press Start</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="intro" aria-label="Entrada da Saboit Games">
+      <div class="room-frame">
+        <img class="room-photo" src="assets/quarto-saboit.png" alt="Quarto de colecionador de videogames, com pôsteres, estantes, televisão de tubo e uma pessoa segurando um controle">
+        <div class="tv-interface" aria-label="Tela interativa da televisão">
+          <div class="tv-noise" aria-hidden="true"></div>
+          <div class="tv-content" id="tvContent">
+            <p class="tv-kicker">ACERVO DE GAMES • DESDE SEMPRE</p>
+            <h1><span>SABOIT</span><span>GAMES</span></h1>
+            <p class="tv-subtitle">JOGOS, MEMÓRIAS & COLECIONISMO</p>
+            <button class="start-button" id="startButton" type="button">
+              <span aria-hidden="true">▶</span> ENTRAR NO CATÁLOGO
+            </button>
+          </div>
+        </div>
+      </div>
+      <p class="hint">USE START PARA EXPLORAR O ACERVO</p>
+    </section>
+
+    <section class="catalog" id="catalog" aria-labelledby="catalogTitle" hidden>
+      <div class="catalog-inner">
+        <p class="eyebrow">SABOIT GAMES • ARQUIVO DE JOGOS</p>
+        <h2 id="catalogTitle">Bem-vindo ao acervo!</h2>
+        <p class="intro-copy">Aqui começa a próxima descoberta da sua coleção.</p>
+        <div class="notice">PRÉVIA DO SITE — os jogos e links reais serão cadastrados depois da aprovação do visual.</div>
+        <div class="category-grid">
+          <article class="category-card"><span>01</span><h3>Clássicos</h3><p>Os jogos que começaram tudo.</p></article>
+          <article class="category-card"><span>02</span><h3>Era 8 e 16 bits</h3><p>Cartuchos e grandes memórias.</p></article>
+          <article class="category-card"><span>03</span><h3>Era 32 e 64 bits</h3><p>Uma nova dimensão de jogos.</p></article>
+          <article class="category-card"><span>04</span><h3>Acervo especial</h3><p>Peças para quem gosta de colecionar.</p></article>
+        </div>
+        <button class="back-button" id="backButton" type="button">↶ VOLTAR PARA A TV</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
