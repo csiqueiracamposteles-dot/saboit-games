@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#100b1b">
+  <meta name="description" content="Saboit Games — um acervo de jogos clássicos para quem gosta de colecionar.">
+  <title>Saboit Games | Acervo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="intro" aria-label="Entrada da Saboit Games">
+      <div class="room-frame">
+        <img class="room-photo" src="assets/quarto-saboit.png" alt="Quarto de colecionador de videogames, com pôsteres, estantes, televisão de tubo e uma pessoa segurando um controle">
+        <div class="tv-interface" aria-label="Tela interativa da televisão">
+          <div class="tv-noise" aria-hidden="true"></div>
+          <div class="tv-content" id="tvContent">
+            <p class="tv-kicker">ACERVO DE GAMES • DESDE SEMPRE</p>
+            <h1><span>SABOIT</span><span>GAMES</span></h1>
+            <p class="tv-subtitle">JOGOS, MEMÓRIAS & COLECIONISMO</p>
+            <button class="start-button" id="startButton" type="button"><span aria-hidden="true">▶</span> START</button>
+          </div>
+        </div>
+      </div>
+      <p class="hint">APERTE START PARA EXPLORAR O ACERVO</p>
+    </section>
+
+    <section class="catalog" id="catalog" aria-labelledby="catalogTitle" hidden>
+      <div class="catalog-inner">
+        <header class="catalog-header">
+          <div class="catalog-brand"><span class="brand-mark">SG</span><span>SABOIT GAMES <small>ARQUIVO DE JOGOS</small></span></div>
+          <button class="back-button" id="backButton" type="button">↶ VOLTAR À TV</button>
+        </header>
+        <div class="catalog-hero">
+          <p class="eyebrow">✦ ACERVO DIGITAL • EDIÇÃO DE DEMONSTRAÇÃO ✦</p>
+          <h2 id="catalogTitle">GARIMPE SEU PRÓXIMO CLÁSSICO</h2>
+          <p>Uma coleção de aventuras, corridas, lutas e mundos inesquecíveis.</p>
+          <span class="pixel-rule">◆ ◆ ◆ ◆ ◆ ◆ ◆ ◆ ◆ ◆ ◆ ◆ ◆ ◆ ◆</span>
+        </div>
+
+        <div class="catalog-tools">
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="gameSearch" type="search" placeholder="Buscar um jogo..." autocomplete="off" aria-label="Buscar um jogo"></label>
+          <div class="filters" role="group" aria-label="Filtrar por plataforma">
+            <button class="filter-button active" data-filter="Todos" type="button">TODOS</button>
+            <button class="filter-button" data-filter="PlayStation 2" type="button">PS2</button>
+            <button class="filter-button" data-filter="PlayStation" type="button">PS1</button>
+            <button class="filter-button" data-filter="Xbox" type="button">XBOX</button>
+            <button class="filter-button" data-filter="GameCube" type="button">GAMECUBE</button>
+            <button class="filter-button" data-filter="PC" type="button">PC</button>
+          </div>
+        </div>
+
+        <div class="collection-heading"><div><p class="eyebrow">PRATELEIRA 01</p><h3>JOGOS EM DESTAQUE</h3></div><span id="gameCount">12 ITENS NO ACERVO</span></div>
+        <div class="game-grid" id="gameGrid" aria-live="polite">
+          <article class="game-card" data-platform="PlayStation 2" data-title="Neon Drift 98">
+            <div class="game-art art-neon"><span class="art-top">SABOIT COLLECTION</span><strong>NEON<br>DRIFT 98</strong><span class="art-visual">◢ ◤</span><span class="art-bottom">RACING • PS2</span></div>
+            <div class="game-info"><span class="platform">PLAYSTATION 2</span><h4>Neon Drift 98</h4><p>Corridas noturnas • Edição fictícia</p><div class="game-foot"><strong>R$ 59,90</strong><span class="availability">● Disponível</span></div><button class="ad-button" type="button" data-game="Neon Drift 98">VER ANÚNCIO ↗</button></div>
+          </article>
+          <article class="game-card" data-platform="PlayStation" data-title="Lendas de Aether">
+            <div class="game-art art-fantasy"><span class="art-top">SABOIT COLLECTION</span><strong>LENDAS<br>DE AETHER</strong><span class="art-visual">✦ ♜ ✦</span><span class="art-bottom">FANTASY • PS1</span></div>
+            <div class="game-info"><span class="platform">PLAYSTATION</span><h4>Lendas de Aether</h4><p>Aventura e fantasia • Edição fictícia</p><div class="game-foot"><strong>R$ 44,90</strong><span class="availability">● Disponível</span></div><button class="ad-button" type="button" data-game="Lendas de Aether">VER ANÚNCIO ↗</button></div>
+          </article>
+          <article class="game-card" data-platform="Xbox" data-title="Operação Eclipse">
+            <div class="game-art art-action"><span class="art-top">SABOIT COLLECTION</span><strong>OPERAÇÃO<br>ECLIPSE</strong><span class="art-visual">◉</span><span class="art-bottom">ACTION • XBOX</span></div>
+            <div class="game-info"><span class="platform">XBOX</span><h4>Operação Eclipse</h4><p>Ação e estratégia • Edição fictícia</p><div class="game-foot"><strong>R$ 69,90</strong><span class="availability">● Disponível</span></div><button class="ad-button" type="button" data-game="Operação Eclipse">VER ANÚNCIO ↗</button></div>
+          </article>
+          <article class="game-card" data-platform="GameCube" data-title="Ilha dos Mistérios">
+            <div class="game-art art-island"><span class="art-top">SABOIT COLLECTION</span><strong>ILHA DOS<br>MISTÉRIOS</strong><span class="art-visual">☼ ◇ ☼</span><span class="art-bottom">ADVENTURE • GC</span></div>
+            <div class="game-info"><span class="platform">GAMECUBE</span><h4>Ilha dos Mistérios</h4><p>Exploração • Edição fictícia</p><div class="game-foot"><strong>R$ 79,90</strong><span class="availability">● Disponível</span></div><button class="ad-button" type="button" data-game="Ilha dos Mistérios">VER ANÚNCIO ↗</button></div>
+          </article>
+          <article class="game-card" data-platform="PlayStation 2" data-title="Futebol Total 2002">
+            <div class="game-art art-sports"><span class="art-top">SABOIT COLLECTION</span><strong>FUTEBOL<br>TOTAL 2002</strong><span class="art-visual">◎</span><span class="art-bottom">SPORTS • PS2</span></div>
+            <div class="game-info"><span class="platform">PLAYSTATION 2</span><h4>Futebol Total 2002</h4><p>Esportes • Edição fictícia</p><div class="game-foot"><strong>R$ 39,90</strong><span class="availability">● Disponível</span></div><button class="ad-button" type="button" data-game="Futebol Total 2002">VER ANÚNCIO ↗</button></div>
+          </article>
+          <article class="game-card" data-platform="PC" data-title="Metrópole Zero">
+            <div class="game-art art-cyber"><span class="art-top">SABOIT COLLECTION</span><strong>METRÓPOLE<br>ZERO</strong><span class="art-visual">▥ ▤ ▥</span><span class="art-bottom">CYBER • PC</span></div>
+            <div class="game-info"><span class="platform">PC</span><h4>Metrópole Zero</h4><p>Ficção científica • Edição fictícia</p><div class="game-foot"><strong>R$ 34,90</strong><span class="availability">● Disponível</span></div><button class="ad-button" type="button" data-game="Metrópole Zero">VER ANÚNCIO ↗</button></div>
+          </article>
+          <article class="game-card" data-platform="PlayStation" data-title="Sombras da Arena">
+            <div class="game-art art-fight"><span class="art-top">SABOIT COLLECTION</span><strong>SOMBRAS<br>DA ARENA</strong><span class="art-visual">✕ VS ✕</span><span class="art-bottom">FIGHTING • PS1</span></div>
+            <div class="game-info"><span class="platform">PLAYSTATION</span><h4>Sombras da Arena</h4><p>Luta • Edição fictícia</p><div class="game-foot"><strong>R$ 49,90</strong><span class="availability">● Disponível</span></div><button class="ad-button" type="button" data-game="Sombras da Arena">VER ANÚNCIO ↗</button></div>
+          </article>
+          <article class="game-card" data-platform="Xbox" data-title="Roboquest X">
+            <div class="game-art art-robot"><span class="art-top">SABOIT COLLECTION</span><strong>ROBOQUEST<br>X</strong><span class="art-visual">⌬</span><span class="art-bottom">SCI-FI • XBOX</span></div>
+            <div class="game-info"><span class="platform">XBOX</span><h4>Roboquest X</h4><p>Ação futurista • Edição fictícia</p><div class="game-foot"><strong>R$ 54,90</strong><span class="availability">● Disponível</span></div><button class="ad-button" type="button" data-game="Roboquest X">VER ANÚNCIO ↗</button></div>
+          </article>
+          <article class="game-card" data-platform="PlayStation 2" data-title="Tesouro do Dragão">
+            <div class="game-art art-dragon"><span class="art-top">SABOIT COLLECTION</span><strong>TESOURO<br>DO DRAGÃO</strong><span class="art-visual">♢ ♢ ♢</span><span class="art-bottom">QUEST • PS2</span></div>
+            <div class="game-info"><span class="platform">PLAYSTATION 2</span><h4>Tesouro do Dragão</h4><p>Aventura • Edição fictícia</p><div class="game-foot"><strong>R$ 64,90</strong><span class="availability">● Disponível</span></div><button class="ad-button" type="button" data-game="Tesouro do Dragão">VER ANÚNCIO ↗</button></div>
+          </article>
+          <article class="game-card" data-platform="GameCube" data-title="Planeta Perdido">
+            <div class="game-art art-space"><span class="art-top">SABOIT COLLECTION</span><strong>PLANETA<br>PERDIDO</strong><span class="art-visual">☄ ✦</span><span class="art-bottom">SPACE • GC</span></div>
+            <div class="game-info"><span class="platform">GAMECUBE</span><h4>Planeta Perdido</h4><p>Exploração espacial • Edição fictícia</p><div class="game-foot"><strong>R$ 74,90</strong><span class="availability">● Disponível</span></div><button class="ad-button" type="button" data-game="Planeta Perdido">VER ANÚNCIO ↗</button></div>
+          </article>
+          <article class="game-card" data-platform="PC" data-title="O Enigma da Mansão">
+            <div class="game-art art-mystery"><span class="art-top">SABOIT COLLECTION</span><strong>O ENIGMA<br>DA MANSÃO</strong><span class="art-visual">♜ ☾</span><span class="art-bottom">MYSTERY • PC</span></div>
+            <div class="game-info"><span class="platform">PC</span><h4>O Enigma da Mansão</h4><p>Suspense • Edição fictícia</p><div class="game-foot"><strong>R$ 29,90</strong><span class="availability">● Disponível</span></div><button class="ad-button" type="button" data-game="O Enigma da Mansão">VER ANÚNCIO ↗</button></div>
+          </article>
+          <article class="game-card" data-platform="PlayStation 2" data-title="Corrida Insana">
+            <div class="game-art art-speed"><span class="art-top">SABOIT COLLECTION</span><strong>CORRIDA<br>INSANA</strong><span class="art-visual">➤ ➤ ➤</span><span class="art-bottom">RACING • PS2</span></div>
+            <div class="game-info"><span class="platform">PLAYSTATION 2</span><h4>Corrida Insana</h4><p>Velocidade • Edição fictícia</p><div class="game-foot"><strong>R$ 59,90</strong><span class="availability">● Disponível</span></div><button class="ad-button" type="button" data-game="Corrida Insana">VER ANÚNCIO ↗</button></div>
+          </article>
+        </div>
+        <p class="empty-state" id="emptyState" hidden>NENHUM JOGO ENCONTRADO. TENTE OUTRA BUSCA!</p>
+        <footer class="catalog-footer"><span>★ SABOIT GAMES ★</span><span>ACERVO DEMONSTRATIVO • PRODUTOS FICTÍCIOS</span><button id="footerBack" type="button">VOLTAR AO INÍCIO ↑</button></footer>
+      </div>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
